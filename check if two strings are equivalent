@@ -1,8 +1,9 @@
-class Solution:
-    def arrayStringsAreEqual(self, word1: List[str], word2: List[str]) -> bool:
-        joined_word1 = "".join(word1)
-        joined_word2 = "".join(word2)
-        if (joined_word1==joined_word2):
-            return True
-        else:
-            return False    
+class Solution {
+    public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
+        String joinedWord1 = String.join("", word1);
+        String joinedWord2 = String.join("", word2);
+
+        return joinedWord1.equals(joinedWord2);
+        
+    }
+}
